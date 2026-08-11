@@ -1,7 +1,7 @@
 # ⚡ Despresso Tech — Professional PC Building & Diagnostics Platform
 
 <p align="center">
-  <img src="logo.png" alt="Despresso Tech Logo" width="512"/>
+  <img src="logo.حىل" alt="Despresso Tech Logo" width="512"/>
 </p>
 
 <p align="center">
@@ -9,6 +9,9 @@
 </p>
 
 <p align="center">
+  <a href="https://despresso-tech.vercel.app/">
+    <img src="https://img.shields.io/badge/Live_Website-Visit_Now-00e5ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Visit Website"/>
+  </a>
   <a href="https://www.facebook.com/share/19AcufBvdo/">
     <img src="https://img.shields.io/badge/Facebook-Despresso_Tech-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"/>
   </a>
@@ -16,6 +19,14 @@
     <img src="https://img.shields.io/badge/WhatsApp-Get_In_Touch-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/>
   </a>
 </p>
+
+---
+
+## 🔗 Live Demo & Links
+
+* 🌐 **Live Website:** [https://despresso-tech.vercel.app/](https://despresso-tech.vercel.app/)
+* 📘 **Facebook Page:** [Despresso Tech on Facebook](https://www.facebook.com/share/19AcufBvdo/)
+* 📱 **Direct Contact / WhatsApp:** `+20 114 000 9830`
 
 ---
 

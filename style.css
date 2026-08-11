@@ -11,7 +11,11 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar Responsive Fix */
+تفضل التعديل المحدث لملف style.css؛ التعديل ده بيضمن إن الموقع يكون responsive ومظبوط على الموبايل، وفي نفس الوقت بيحافظ على مكان Despresso Tech على الشمال والروابط على اليمين على شاشات الموبايل والشاشات الكبيرة بنفس الترتيب:
+
+1. استبدل قسم الـ Navbar في ملف style.css بهذا الكود:
+CSS
+/* Navbar Fix */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -19,8 +23,7 @@ body {
     padding: 15px 5%;
     background: #182026;
     border-bottom: 1px solid #283545;
-    flex-wrap: wrap; /* يمنع خروج العناصر برة الشاشة */
-    gap: 15px;
+    direction: rtl; /* اتجاه عربي لتثبيت العناصر */
 }
 
 .logo {
@@ -28,6 +31,7 @@ body {
     font-weight: 800;
     color: #ffffff;
     letter-spacing: 1px;
+    order: 2; /* إجبار اللوجو يتواجد أقصى الشمال دائمًا */
 }
 
 .logo span {
@@ -36,10 +40,11 @@ body {
 }
 
 nav {
+    order: 1; /* إجبار الروابط تتواجد أقصى اليمين دائمًا */
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
+    flex-wrap: wrap; /* السماح للروابط بالتكيف لو الشاشة صغرت */
 }
 
 nav a {
@@ -48,6 +53,10 @@ nav a {
     font-weight: 600;
     font-size: 0.9rem;
     transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00e5ff;
 }
 
 .btn-facebook {
@@ -365,24 +374,34 @@ footer {
 }
 
 
-/* Media Queries for Mobile Screens */
+/* Media Queries for Mobile Responsive */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* يرتب اللوجو والروابط تحت بعض في الموبايل */
-        text-align: center;
+        padding: 12px 4%;
+        /* المحافظة على التوزيع: الروابط يمين واللوجو شمال حتى في الموبايل */
+        flex-direction: row; 
+        justify-content: space-between;
     }
 
     nav {
-        justify-content: center;
-        width: 100%;
+        gap: 8px; /* تقليل المسافات بين الأزرار لعدم الخروج عن الشاشة */
+    }
+
+    nav a {
+        font-size: 0.8rem; /* تصغير خط الروابط قليلاً في الشاشات الصغيرة */
+    }
+
+    .btn-facebook, .btn-visit {
+        padding: 4px 8px;
+        font-size: 0.75rem;
     }
 
     .hero h1 {
-        font-size: 1.8rem; /* تصغير حجم العنوان الكبير ليناسب الموبايل */
+        font-size: 1.8rem; /* ضبط حجم عنوان الـ Hero ليشغل مساحة مناسبة */
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .hero-btns {
@@ -393,7 +412,8 @@ footer {
 
     .btn-primary, .btn-secondary {
         margin-left: 0;
-        width: 100%; /* الأزرار تأخذ عرض الشاشة بالكامل في الموبايل */
+        width: 100%; /* جعل الأزرار تأخذ العرض الكامل لتسهيل الضغط بالموبايل */
+        text-align: center;
     }
 
     .calc-box, .case-box, .review-card {

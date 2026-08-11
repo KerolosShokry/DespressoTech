@@ -1,7 +1,7 @@
 # ⚡ Despresso Tech — Professional PC Building & Diagnostics Platform
 
 <p align="center">
-  <img src="logo.jpg" alt="Despresso Tech Logo" width="180"/>
+  <img src="logo.png" alt="Despresso Tech Logo" width="180"/>
 </p>
 
 <p align="center">

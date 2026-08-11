@@ -11,23 +11,23 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar */
+/* Navbar Responsive Fix */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 8%;
+    padding: 15px 5%;
     background: #182026;
     border-bottom: 1px solid #283545;
-    direction: rtl; /* لضمان ترتيب الـ Flexbox بشكل صحيح */
+    flex-wrap: wrap; /* يمنع خروج العناصر برة الشاشة */
+    gap: 15px;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 800;
     color: #ffffff;
     letter-spacing: 1px;
-    order: 2; /* نقل الاسم Despresso Tech لأقصى الشمال */
 }
 
 .logo span {
@@ -36,22 +36,18 @@ body {
 }
 
 nav {
-    order: 1; /* نقل قائمة الروابط والفيسبوك لأقصى اليمين */
     display: flex;
     align-items: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav a {
     color: #9fb3c8;
     text-decoration: none;
-    margin-left: 0; /* إلغاء الـ margin القديم */
     font-weight: 600;
+    font-size: 0.9rem;
     transition: 0.3s;
-}
-
-nav a:hover {
-    color: #00e5ff;
 }
 
 .btn-facebook {
